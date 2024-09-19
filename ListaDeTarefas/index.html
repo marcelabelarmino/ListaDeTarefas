@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <div id="menu">
+            <img src="imgs/marcela.png" alt="Foto da candidata Marcela Belarmino">
+            <h2>Marcela Belarmino</h2>
+            <p class="bio">
+                Estudante dedicada de Análise e Desenvolvimento de Sistemas. Comprometida com o avanço da tecnologia, participo ativamente de um Projeto de Extensão Tecnológica pela FACEPE. Complementando minha jornada, busco excelência na programação através de uma Formação Acelerada pela SOFTEX em Desenvolvimento FrontEnd React.
+            </p>
+            <ul class="social-media">
+                <li><a href="https://www.linkedin.com/in/marcelabelarmino/" class="destaque">LinkedIn</a></li>
+                <li><a href="https://github.com/marcelabelarmino" class="destaque">GitHub</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Lista de tarefas</h1>
+            <div class="task-table">
+                <div class="task-list">
+                    <h3>Dia</h3>
+                    <ul id="day-tasks">
+                    <li>
+                        <span>Organizar a casa</span>
+                        <i class="fas fa-trash-alt" onclick="removeTask(event)"></i>
+                    </li>
+                    <li>
+                        <span>Estudar HTML, CSS e JavaScript</span>
+                        <i class="fas fa-trash-alt" onclick="removeTask(event)"></i>
+                    </li>
+                    <li>
+                        <span>Ler o livro "Não me faça pensar" do Steve Krug</span>
+                        <i class="fas fa-trash-alt" onclick="removeTask(event)"></i>
+                    </li>
+                    <li>
+                        <span>Ir à academia</span>
+                        <i class="fas fa-trash-alt" onclick="removeTask(event)"></i>
+                    </li>
+                    <li>
+                        <span>Fazer os trabalhos da faculdade</span>
+                        <i class="fas fa-trash-alt" onclick="removeTask(event)"></i>
+                    </li>
+                </ul>
+                <div class="add-task">
+                    <input autofocus rows="10" cols="50" type="text" id="new-day-task" placeholder="Digite a tarefa">
+                    <button onclick="addTask('day')">Adicionar tarefa</button>
+                    </div>
+                </div>
+                <div class="task-list">
+                    <h3>Noite</h3>
+                    <ul id="evening-tasks">
+                    <li>
+                        <span>Organizar o escritório</span>
+                        <i class="fas fa-trash-alt" onclick="removeTask(event)"></i>
+                    </li>
+                    <li>
+                        <span>Ir à faculdade</span>
+                        <i class="fas fa-trash-alt" onclick="removeTask(event)"></i>
+                    </li>
+                    <li>
+                        <span>Resumir os conteúdos aprendidos em sala</span>
+                        <i class="fas fa-trash-alt" onclick="removeTask(event)"></i>
+                    </li>
+                    <li>
+                        <span>Aperfeiçoar os projetos em andamento</span>
+                        <i class="fas fa-trash-alt" onclick="removeTask(event)"></i>
+                    </li>
+                    <li>
+                    <span>Escutar Podcast de Tecnologia</span>
+                    <i class="fas fa-trash-alt" onclick="removeTask(event)"></i>
+                </li>
+                </ul>
+                <div class="add-task">
+                    <input autofocus rows="10" cols="50" type="text" id="new-evening-task" placeholder="Digite a tarefa">
+                    <button onclick="addTask('evening')">Adicionar tarefa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

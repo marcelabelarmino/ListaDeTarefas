@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+  
+#container {
+    display: flex;
+    flex-direction: row;
+}
+  
+#menu {
+    width: 350px;
+    background: #B7B597;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+#menu img {
+    margin: auto;
+    display: block;
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.bio {
+    text-align: justify;
+  }
+  
+  #content {
+    flex: 1;
+    flex-grow: 1;
+    padding: 80px;
+    border: 1px solid #000000;
+    background-color: #254336
+    
+  }
+  
+  h2, h3 {
+    margin: 0;
+  }
+
+  #menu h2 {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  #content h1, h3 {
+    text-align: center;
+    color: white;
+  }
+  
+  #content h1 {
+    margin: 0;
+    padding-bottom: 20px;
+    color: white;
+  }
+  
+  #menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-media {
+    text-align: center;
+  }
+  
+  #menu li {
+    padding: 2px 0;
+  }
+  
+  ul li a {
+    text-decoration: none;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a, .destaque {
+    color: #254336;
+    font-size: 20px;
+    font-family: Arial;
+  }
+  
+  .task-table {
+    display: flex;
+  }
+  
+  .task-list {
+    flex-basis: 50%;
+    box-shadow: 2px 2px 2px gray;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #6B8A7A;
+    margin: 3px; 
+    padding: 10px; 
+    color: white;
+  }
+  
+  .task-list ul {
+    padding-left: 20px;
+  }
+  
+  .fa-trash-alt {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding-left: 10px; 
+  }
+  
+  .add-task {
+    margin-top: 10px;
+  }
+  
+  .add-task input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  
+  .add-task button {
+    padding: 5px 10px;
+  }
+  
+  button {
+  border-radius: 5px;
+  background-color: #254336;
+  color: rgb(255, 255, 255);
+  padding: 3px 8px; 
+  font-size: 12px; 
+  border: 1px solid #000000; 
+  cursor: pointer;
+  }
+  
+  button:hover {
+  background-color: #1a7f1a;
+  border-color: #000000;
+  }
+  
